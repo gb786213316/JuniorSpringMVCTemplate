@@ -31,4 +31,6 @@ public interface AuthTokenMapper {
     int updateByPrimaryKeySelective(AuthToken record);
 
     int updateByPrimaryKey(AuthToken record);
+
+    AuthToken selectByToken(AuthToken token);
 }

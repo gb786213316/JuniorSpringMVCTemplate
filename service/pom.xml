@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>com.haomostudio.JuniorSpringMVCTemplate</groupId>
 			<artifactId>domain</artifactId>
-			<version>${JuniorSpringMVCTemplate.dao.version}</version>
+			<version>${JuniorSpringMVCTemplate.domain.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sap</groupId>

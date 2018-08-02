@@ -31,4 +31,6 @@ public interface HmUserMapper {
     int updateByPrimaryKeySelective(HmUser record);
 
     int updateByPrimaryKey(HmUser record);
+
+    HmUser selectOne(HmUser user);
 }

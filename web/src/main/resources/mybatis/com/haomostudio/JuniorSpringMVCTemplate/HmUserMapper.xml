@@ -494,4 +494,11 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectOne" parameterType="com.haomostudio.JuniorSpringMVCTemplate.po.HmUser" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from hm_user
+    where loginid = #{loginid,jdbcType=VARCHAR}
+    and  password = #{password,jdbcType=VARCHAR}
+  </select>
 </mapper>

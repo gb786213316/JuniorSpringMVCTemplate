@@ -11,7 +11,7 @@
 	<!-- 数据源配置 -->
 	<bean id="crmDataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
 		p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:mysql://haomo-tech.com:3317/org?useUnicode=true&amp;characterEncoding=UTF8"
-		p:username="root" p:password="root"
+		p:username="org" p:password="org@haomo"
 		p:validationQuery="select 1" p:testWhileIdle="true"
 		  p:timeBetweenEvictionRunsMillis="3600000"
           p:maxActive="300"

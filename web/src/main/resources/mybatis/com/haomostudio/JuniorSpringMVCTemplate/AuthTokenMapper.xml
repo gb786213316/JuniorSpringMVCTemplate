@@ -225,4 +225,11 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByToken" parameterType="com.haomostudio.JuniorSpringMVCTemplate.po.AuthToken" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from auth_token
+    where user_id = #{userId,jdbcType=VARCHAR}
+    and   token = #{token,jdbcType=VARCHAR}
+  </select>
 </mapper>
